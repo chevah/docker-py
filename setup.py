@@ -18,8 +18,12 @@ if sys.platform == 'win32':
     requirements.append('pypiwin32 >= 219')
 
 extras_require = {
-    ':python_version < "3.5"': 'backports.ssl_match_hostname >= 3.5',
-    ':python_version < "3.3"': 'ipaddress >= 1.0.16',
+    'backports': [
+        'backports.ssl_match_hostname >= 3.5',
+    ],
+    'ipaddress': [
+        'ipaddress >= 1.0.16',
+    ]
 }
 
 version = None
