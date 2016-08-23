@@ -31,7 +31,7 @@ with open('./test-requirements.txt') as test_reqs_txt:
 
 setup(
     name="docker-py",
-    version=version,
+    version=version + '.chevah1',
     description="Python client for Docker.",
     url='https://github.com/docker/docker-py/',
     packages=[
